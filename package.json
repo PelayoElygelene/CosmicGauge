@@ -1,0 +1,42 @@
+{
+  "name": "cosmic-gauge",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "CosmicGauge – lightweight TypeScript/Vite project with Coinbase ecosystem integrations.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -p tsconfig.json && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@coinbase/onchainkit": "^1.1.0",
+    "@coinbase/agentkit": "^0.6.0",
+    "@coinbase/x402": "^2.0.0",
+    "@coinbase/coinbase-wallet-sdk": "^4.3.7",
+    "viem": "^2.21.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "vite": "^5.0.8"
+  },
+  "dependencyDescriptions": {
+    "@coinbase/onchainkit": {
+      "repo": "coinbase/onchainkit",
+      "why": "UI-компоненты и утилиты для Base-first ончейн приложений."
+    },
+    "@coinbase/agentkit": {
+      "repo": "coinbase/agentkit",
+      "why": "SDK для построения агентных и автоматизированных ончейн-взаимодействий."
+    },
+    "@coinbase/x402": {
+      "repo": "coinbase/x402",
+      "why": "HTTP-native x402 payment flow для payable API и gated endpoints."
+    },
+    "@coinbase/coinbase-wallet-sdk": {
+      "repo": "coinbase/coinbase-wallet-sdk",
+      "why": "Подключение и управление Coinbase Wallet в веб-приложениях."
+    }
+  }
+}
